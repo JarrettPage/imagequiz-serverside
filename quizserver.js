@@ -23,7 +23,7 @@ app.get('/quizzes', (request, response) => {
 
 app.get('/quiz/:id', (request, response) => {
     let id = request.params.id;
-    let quiz = quizzes.find(x => x.id === id);
+    let quiz = quizzes[Number(id)];
     if(quiz) {
         response.json(quiz);
     }
