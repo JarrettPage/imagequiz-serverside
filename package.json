@@ -1,0 +1,23 @@
+{
+  "name": "imagequiz-serverside",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quizserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node quizserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JarrettPage/imagequiz-serverside.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JarrettPage/imagequiz-serverside/issues"
+  },
+  "homepage": "https://github.com/JarrettPage/imagequiz-serverside#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
