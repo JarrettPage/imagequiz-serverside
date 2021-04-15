@@ -30,7 +30,7 @@ app.get('/quiz/:id', (request, response) => {
         response.json(quiz);
     }
     else {
-        response.status(404).send('The quiz number ${id} could not be found.')
+        response.status(404).send(`The quiz number ${id} could not be found.`)
     }
 });
 
