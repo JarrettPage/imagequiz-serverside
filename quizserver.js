@@ -1,6 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const db = require('./quizdb');
+const utility = require('./utility');
 
 const app = express();
 const port = process.env.PORT || 4002;
@@ -30,7 +31,7 @@ app.get('/quiz/:id', (request, response) => {
     let id = request.params.id;
     let quiznumber = Number(id);
     db.findQuiz(quiznumber)
-    .then(quiz => response.json(quiz))
+    .then(quiz => response.json(utility.convertQuiz(quiz)))
     .catch(e => {console.log(e); response.status(500).send('There was a problem getting the quiz.')});
 });
 /*
